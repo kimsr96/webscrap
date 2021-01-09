@@ -3,17 +3,15 @@ from selenium import webdriver
 options = webdriver.ChromeOptions("./chromedriver")
 options.headless = True
 options.add_argument("window-size=1920X1080")
-
 browser = webdriver.Chrome(options=options)
 browser.maximize_window()
 #페이지 이동
-url = "https://play.google.com/store/movies/top"
+url = "https://play.google.com/store/movies/top" 
 browser.get(url)
 
 #스크롤 내리기
 # browser.execute_script("window.scrollTo(0,1080)")
 browser.execute_script("window.scrollTo(0, document.body.scrollHeight)")
-
 import time
 interval = 2 # 2초에 한번씩 스크롤 내림
 
