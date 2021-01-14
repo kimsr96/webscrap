@@ -57,4 +57,3 @@ for idx, hause in enumerate(hauses):
     print("가격: ", columns[2].get_text().strip())
     print("동: ", columns[3].get_text().strip())
     print("층: ", columns[4].get_text().strip())
-         
